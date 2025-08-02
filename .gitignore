@@ -36,6 +36,3 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
-### TEMPORARY ###
-/src/main/java/Easy/ThreeNumberSum.java

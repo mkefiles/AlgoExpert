@@ -4,6 +4,11 @@ All of the code samples passed all test cases provided by AlgoExpert. The test-c
 
 ## Miscellaneous Notes
 
+### Helpful Takeaways
+
+- When working with _objects_ (**incl.** _wrapper classes_) in lieu of the _primitive_ equivalent just note that you are working with the address of the value **not** the value itself
+  - Use `output.add(new Integer[]{currentNumber, leftCursor, rightCursor});` in lieu of updating an `Integer[]` array with _bracket notation_ then adding that array to the parent ArrayList array
+
 ### Reflection API
 
 While working through the *Coding Interview Questions*, I found the Reflection API to be useful in determining the underlying structural information (albeit excessive/unnecessary).
