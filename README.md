@@ -6,6 +6,21 @@ All of the code samples passed all test cases provided by AlgoExpert. The test-c
 
 - Look at Medium -> MergeOverlappingIntervals for an example of working with a nested ArrayList
 
+## Thinking Algorithmically
+
+Throughout the AlgoExpert course, these are the common approaches I encountered:
+
+- Arrays
+  - Use multiple *cursors* and a `while` loop
+    - This works in lieu of using nested loops or even multiple subsequent loops
+  - Sort the array (where possible) prior to working the challenge
+  - Use *Bitwise Operators*
+    - The following challenges have a solution that uses *Bitwise Operators*
+      - *Missing Numbers* (under "Medium") uses `^` (xor) operator [**not** used for the my solution]
+      - *Majority Element* (under "Medium") uses `&` (and) operator [**not** used for the my solution]
+
+Also, as an extremely important yet generic tip... pay close attention to what the challenge verbiage states and, quite frankly, what it does not explicitly state as that can help determine how to solve it. For example, if it does **not** mention anything about **not** sorting or mutating the input, then it is likely that you can.
+
 ## Miscellaneous Notes
 
 ### Helpful Takeaways
