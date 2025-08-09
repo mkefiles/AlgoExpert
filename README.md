@@ -2,6 +2,10 @@
 
 All of the code samples passed all test cases provided by AlgoExpert. The test-cases used are not included in the content of this repo. as this was simply intended to keep track of what I've done.
 
+## Code References
+
+- Look at Medium -> MergeOverlappingIntervals for an example of working with a nested ArrayList
+
 ## Miscellaneous Notes
 
 ### Helpful Takeaways
@@ -39,3 +43,7 @@ for (Method method : methods) {
 }
 ```
 
+### AlgoExpert Error(s) Encountered
+
+- On *MergeOverlappingIntervals*, I noticed that the Array List `.getLast()` method was not working so I replaced it with `get(outputArrayList.size() - 1)` in all areas of my code
+  - Note that `.getLast()` was working in IntelliJ IDEA **and** the Java version of AlgoExpert appears to check out (i.e., it is Java 21)
