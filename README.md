@@ -4,7 +4,9 @@ All of the code samples passed all test cases provided by AlgoExpert. The test-c
 
 ## Code References
 
-- Look at Medium -> MergeOverlappingIntervals for an example of working with a nested ArrayList
+- Look at the following challenges for examples of working with a nested ArrayList
+  - Medium -> MergeOverlappingIntervals
+  - Hard -> FourNumberSum
 
 ## Thinking Algorithmically
 
