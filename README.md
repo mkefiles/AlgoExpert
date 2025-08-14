@@ -27,8 +27,20 @@ Also, as an extremely important yet generic tip... pay close attention to what t
 
 ### Helpful Takeaways
 
+> When you have eliminated the impossible, whatever remains, however improbable, must be the truth. ~ Sherlock Holmes
+
+- In continuation of the quote, when confused as to why certain test-cases are not running properly, maybe the test-cases that **are** running properly are throwing false-positives and they actually have flawed logic (i.e., check the 'correct' test-cases for proper functionality)
 - When working with _objects_ (**incl.** _wrapper classes_) in lieu of the _primitive_ equivalent just note that you are working with the address of the value **not** the value itself
   - Use `output.add(new Integer[]{currentNumber, leftCursor, rightCursor});` in lieu of updating an `Integer[]` array with _bracket notation_ then adding that array to the parent ArrayList array
+- `Integer[]` / `int[]` vs `ArrayList<Integer>`
+  - Use `Integer[]` when...
+    - The size of the collection is known and fixed in advance
+    - Performance for direct element access is critical
+    - Memory efficiency is a primary concern
+  - Use `ArrayList<Integer>` when...
+    - The size of the collection is dynamic and may change during execution
+    - Convenience and ease of use with built-in methods are desired
+    - Flexibility in adding, removing, and manipulating elements is required
 
 ### Reflection API
 
