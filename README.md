@@ -20,6 +20,8 @@ Throughout the AlgoExpert course, these are the common approaches I encountered:
     - The following challenges have a solution that uses *Bitwise Operators*
       - *Missing Numbers* (under "Medium") uses `^` (xor) operator [**not** used for the my solution]
       - *Majority Element* (under "Medium") uses `&` (and) operator [**not** used for the my solution]
+  - Use the *Peaks and Valleys* approach
+    - This entails locating the *local minimums* (i.e., where the adjacent values both have higher values) then iterating out left and right until a *peak* is located (i.e., where the adjacent value on one side starts to decrease)
 
 Also, as an extremely important yet generic tip... pay close attention to what the challenge verbiage states and, quite frankly, what it does not explicitly state as that can help determine how to solve it. For example, if it does **not** mention anything about **not** sorting or mutating the input, then it is likely that you can.
 
