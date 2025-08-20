@@ -236,7 +236,3 @@ public class ZigZagTraverse {
         return oneDimensionalOutput;
     }
 }
-
-
-// T.C. -> O (n) every element is traversed once
-// S.C. -> O (n) every element is appended to another array once
