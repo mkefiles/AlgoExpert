@@ -78,3 +78,8 @@ for (Method method : methods) {
 
 - On *MergeOverlappingIntervals*, I noticed that the Array List `.getLast()` method was not working so I replaced it with `get(outputArrayList.size() - 1)` in all areas of my code
   - Note that `.getLast()` was working in IntelliJ IDEA **and** the Java version of AlgoExpert appears to check out (i.e., it is Java 21)
+
+### Questions for Developers
+
+- In the event that you find a solution that works for all *normal* cases, yet is broken for *edge-cases* do you modify the working logic to include the *edge-cases* **or** do you create separate code-blocks around your logic to separately locate and handle those *edge-cases*?
+  - I've noticed that I find it easier to do the latter approach in lieu of tampering with working logic (i.e., why let the minority/unique events alter the logic that will work for the majority of the events mentality)
