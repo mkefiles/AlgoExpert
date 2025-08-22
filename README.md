@@ -43,6 +43,9 @@ Also, as an extremely important yet generic tip... pay close attention to what t
     - The size of the collection is dynamic and may change during execution
     - Convenience and ease of use with built-in methods are desired
     - Flexibility in adding, removing, and manipulating elements is required
+- If you need to round up an integer, then you need to convert the value(s) passed to `Math.ceil(x)` to *double* first
+  - If not, then results may be wrong because the `int` / `Integer` prematurely truncates the decimals
+  - Cast to int with `(int)` and double with `(double)`
 
 ### Reflection API
 
