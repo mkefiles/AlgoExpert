@@ -46,6 +46,7 @@ Also, as an extremely important yet generic tip... pay close attention to what t
 - If you need to round up an integer, then you need to convert the value(s) passed to `Math.ceil(x)` to *double* first
   - If not, then results may be wrong because the `int` / `Integer` prematurely truncates the decimals
   - Cast to int with `(int)` and double with `(double)`
+- A great way to know what *non-primitive* data type you're working with is to append `.getClass().getName()`
 
 ### Reflection API
 
