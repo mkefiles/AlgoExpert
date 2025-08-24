@@ -47,6 +47,31 @@ Also, as an extremely important yet generic tip... pay close attention to what t
   - If not, then results may be wrong because the `int` / `Integer` prematurely truncates the decimals
   - Cast to int with `(int)` and double with `(double)`
 - A great way to know what *non-primitive* data type you're working with is to append `.getClass().getName()`
+- With regards to *type-casting*, if you have an *Object* data-type that has specific underlying values (e.g., `Integer` / `int`), then you will notice that you cannot simply cast to a different type (e.g., `Double` / `double`) directly as you will encounter a `ClassCastException`
+  - To handle this, first cast to a `Number` (the parent-class of both), then convert to the desired value-type (e.g., `Double` / `double`)
+    - Code snippet: `double d = ((Number) obj).doubleValue();` where `obj` was defined as `Object obj = 10;`
+- Note the difference between a *primitive* Array and an *Object* `ArrayList` when it comes to outputting to a string:
+
+```java
+// DESC: Outputting an ArrayList to a String
+// NOTE: `Arrays.toString()` does not work
+ArrayList<ArrayList<Integer>> test01 = new ArrayList<ArrayList<Integer>>();
+test01.add(new ArrayList<>(Arrays.asList(1, 2, 3)));
+for (ArrayList<Integer> singleArray : test01) {
+    System.out.println(singleArray);
+}
+
+// DESC: Outputting an Array to a String
+// NOTE: `Arrays.toString()` is required as it will,
+// ... otherwise, output the memory location not the
+// ... value itself
+int[][] test02 = {{1, 2, 3}};
+for (int[] singleArray : test02) {
+    System.out.println(Arrays.toString(singleArray));
+}
+```
+
+
 
 ### Reflection API
 
@@ -87,3 +112,5 @@ for (Method method : methods) {
 
 - In the event that you find a solution that works for all *normal* cases, yet is broken for *edge-cases* do you modify the working logic to include the *edge-cases* **or** do you create separate code-blocks around your logic to separately locate and handle those *edge-cases*?
   - I've noticed that I find it easier to do the latter approach in lieu of tampering with working logic (i.e., why let the minority/unique events alter the logic that will work for the majority of the events mentality)
+- Is it the 'norm' (or *best practice*) to define as many variables as possible upfront **or** do developers tend to define them as they need them (i.e., next to the code-block/region they are being used nearest)?
+  - I've been trying to define all variables upfront so there is one clean/concise location for them... not sure if that is problematic
