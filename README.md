@@ -71,6 +71,9 @@ for (int[] singleArray : test02) {
 }
 ```
 
+- IF you have an end T.C. of, say, n^2 (due to a nested loop), then you could, in theory, do other T.C. tasks (less than that) without altering the end T.C.
+  - For example, if you know that you need a nested loop to iterate every value then you can output all values of an array to another data-set using a simple loop and even though that is iterating each value one it is 'n' T.C., which is less than n^2 and it gives you another data-structure that may be of additional help to solve the issue
+- With Java specifically, when adding an array of integers to a `Set` of arrays that contains integers, it is best to have them added as `List<>` elements NOT as `Integer[]` because the `.contains()` misbehaves when trying it the logical way
 
 
 ### Reflection API
