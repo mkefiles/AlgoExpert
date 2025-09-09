@@ -120,3 +120,4 @@ for (Method method : methods) {
   - I've noticed that I find it easier to do the latter approach in lieu of tampering with working logic (i.e., why let the minority/unique events alter the logic that will work for the majority of the events mentality)
 - Is it the 'norm' (or *best practice*) to define as many variables as possible upfront **or** do developers tend to define them as they need them (i.e., next to the code-block/region they are being used nearest)?
   - I've been trying to define all variables upfront so there is one clean/concise location for them... not sure if that is problematic
+- Random question, however I am curious to learn about using VIM vs an IDE
