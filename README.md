@@ -121,3 +121,7 @@ for (Method method : methods) {
 - Is it the 'norm' (or *best practice*) to define as many variables as possible upfront **or** do developers tend to define them as they need them (i.e., next to the code-block/region they are being used nearest)?
   - I've been trying to define all variables upfront so there is one clean/concise location for them... not sure if that is problematic
 - Random question, however I am curious to learn about using VIM vs an IDE
+
+### Areas Where I Struggle
+
+- Handling while-loops and proper placement of iteration (mainly for multi-cursor traversal)
